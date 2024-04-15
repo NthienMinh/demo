@@ -2,7 +2,7 @@
     <application
         android:label="Counter Star"
         android:name="${applicationName}"
-        android:icon="@mipmap/counter_star">
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"
