@@ -68,7 +68,7 @@
         <entry key="flutter">
           <value>
             <list>
-              <option value="/usr/local/Caskroom/flutter/3.10.3/flutter/packages/flutter/lib" />
+              <option value="$PROJECT_DIR$/../Desktop/flutter/packages/flutter/lib" />
             </list>
           </value>
         </entry>
@@ -89,7 +89,7 @@
         <entry key="flutter_test">
           <value>
             <list>
-              <option value="/usr/local/Caskroom/flutter/3.10.3/flutter/packages/flutter_test/lib" />
+              <option value="$PROJECT_DIR$/../Desktop/flutter/packages/flutter_test/lib" />
             </list>
           </value>
         </entry>
@@ -166,7 +166,7 @@
         <entry key="sky_engine">
           <value>
             <list>
-              <option value="/usr/local/Caskroom/flutter/3.10.3/flutter/bin/cache/pkg/sky_engine/lib" />
+              <option value="$PROJECT_DIR$/../Desktop/flutter/bin/cache/pkg/sky_engine/lib" />
             </list>
           </value>
         </entry>
@@ -258,9 +258,9 @@
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/test_api-0.6.1/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/vm_service-13.0.0/lib" />
-      <root url="file:///usr/local/Caskroom/flutter/3.10.3/flutter/bin/cache/pkg/sky_engine/lib" />
-      <root url="file:///usr/local/Caskroom/flutter/3.10.3/flutter/packages/flutter/lib" />
-      <root url="file:///usr/local/Caskroom/flutter/3.10.3/flutter/packages/flutter_test/lib" />
+      <root url="file://$PROJECT_DIR$/../Desktop/flutter/bin/cache/pkg/sky_engine/lib" />
+      <root url="file://$PROJECT_DIR$/../Desktop/flutter/packages/flutter/lib" />
+      <root url="file://$PROJECT_DIR$/../Desktop/flutter/packages/flutter_test/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
