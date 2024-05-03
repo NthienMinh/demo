@@ -8,6 +8,7 @@ class CounterCubit extends Cubit<int> {
 
   increment(bool change) {
     number1++;
+
     emit(state + 1);
   }
 }
