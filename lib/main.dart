@@ -29,7 +29,7 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({super.key, required this.title});
 
   final String title;
-  final HotelCubit cubit = HotelCubit();
+  final NumberCubit cubit = NumberCubit();
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text(widget.title),
         ),
-        body: BlocBuilder<HotelCubit, int>(
+        body: BlocBuilder<NumberCubit, int>(
             bloc: widget.cubit..init(),
             builder: (c, state) {
               if(state == 0){
@@ -52,17 +52,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               }
               return  ListView.builder(
-                itemCount: widget.cubit.listHotels!.length,
+                itemCount: widget.cubit.listNumber!.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    title: Text(widget.cubit.listHotels![index]),
+                    title: Text(widget.cubit.listNumber![index]),
                   );
                 },
               );
             }),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            widget.cubit.addHotel('Hotel ${widget.cubit.listHotels!.length+1}');
+            widget.cubit.addNumber('Number ${widget.cubit.listNumber!.length+1}');
           },
           tooltip: 'Increment',
           child: const Icon(Icons.add),
