@@ -1,14 +1,20 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CounterCubit extends Cubit<int> {
-  CounterCubit() : super(0);
+class HotelCubit extends Cubit<int> {
+  HotelCubit() : super(0);
 
-  int number1 = 0;
-  int number2 = 0;
+  List<String>? listHotels;
 
-  increment(bool change) {
-    number1++;
+  init(){
+    listHotels = ['Hotel 1', 'Hotel 2', 'Hotel 3'];
+    Future.delayed(const Duration(seconds: 2), (){
+      emit(state+1);
+    });
+  }
 
-    emit(state + 1);
+  void addHotel(String hotel){
+    listHotels!.add(hotel);
+    emit(state+1);
   }
 }
+
